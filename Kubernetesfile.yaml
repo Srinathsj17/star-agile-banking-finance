@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: banking-container
-        image: srinathsj17/banking-app:latest
+        image: srinathsj17/netflix:v2
         ports:
-        - containerPort: 8082
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -32,6 +32,6 @@ spec:
 
   type: NodePort
   ports:
-  - nodePort: 31000
-    port: 8082
-    targetPort: 8082
+  - nodePort: 31001
+    port: 8080
+    targetPort: 8080
