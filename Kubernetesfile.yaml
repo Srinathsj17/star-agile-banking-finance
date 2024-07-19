@@ -18,7 +18,7 @@ spec:
       - name: banking-container
         image: srinathsj17/banking-app:latest
         ports:
-        - containerPort: 8082
+        - containerPort: 8085
 ---
 apiVersion: v1
 kind: Service
@@ -33,5 +33,5 @@ spec:
   type: NodePort
   ports:
   - nodePort: 31111
-    port: 8082
-    targetPort: 8082
+    port: 8085
+    targetPort: 8085
