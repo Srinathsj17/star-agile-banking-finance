@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: banking-container
-        image: srinathsj17/banking-app
+        image: srinathsj17/netflix:v2
         ports:
         - containerPort: 8082
 ---
